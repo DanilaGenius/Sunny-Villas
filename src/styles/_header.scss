@@ -1,0 +1,17 @@
+.header {
+    width: 100%;
+    max-width: 1620px;
+    height: 100vh;
+    background-image: url('../images/header-bg.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: relative;
+    margin: 0 auto;
+}
+
+.header__logo {
+    position: absolute;
+    content: url("../images/logo-header.png");
+    top: 58px;
+    left: 48px;
+}
