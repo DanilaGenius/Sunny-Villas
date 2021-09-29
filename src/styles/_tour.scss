@@ -1,0 +1,117 @@
+.tour {
+    padding-top: 190px;
+    &_btn {
+        padding: 28px 72px; 
+        margin-top: 22px;
+        background: radial-gradient(50.66% 1283.5% at 46.52% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+        max-width: 326px;
+        cursor: pointer;
+    }
+
+    &__container {
+        @include flex(flex-start, flex-end);
+    }
+
+
+    &__content {
+        margin-right: 101px;
+        width: 382px;
+    }
+
+    &__title {
+        font-style: normal;
+        font-size: 28px;
+        line-height: 140%;
+        margin-bottom: 37px;
+        font-family: 'Gilroy-Medium';  
+    }
+
+    &__subtitle {
+        font-style: normal;
+        font-size: 24px;
+        line-height: 130%;
+        margin-bottom: 172px;
+        max-width: 415px;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 130%;
+        max-width: 326px;
+        text-align: center;
+    }
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+
+    &__frame {
+        display: flex;
+        overflow: hidden;
+        width: 1011px;
+    }
+
+    &__arrow-left, &__arrow-right {
+        position: absolute;
+        bottom: 80px;
+        width: 193.02px;
+        height: 154.42px;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+        backdrop-filter: blur(2px);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+        @include flex(center, center);
+    }
+
+    &__arrow-left {
+        left: -65px;
+    }
+
+    &__arrow-right {
+        left: 152px;
+        transform: rotate(180deg);
+    }
+    &__arrow-left, &__arrow-right {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    &__line {
+        width: 65px;
+        height: 1px;
+        border: 1.5px solid #FFFFFF;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+        position: relative;
+        border-radius: 10px;
+    }
+
+    &__arrow-left:hover, &__arrow-right:hover {
+        opacity: 1;
+    }
+
+    &__line::before {
+        position: absolute;
+        content: '';
+        top: 2px;
+        left: -5px;
+        width: 10px;
+        border: 1.5px solid #fafafa;
+        transform: rotate(45deg);
+        border-radius: 5px;
+    }
+
+    &__line::after {
+        position: absolute;
+        content: '';
+        top: -4px;
+        left: -5px;
+        width: 10px;
+        border: 1.5px solid #f8f8f8;
+        transform: rotate(-45deg);
+        border-radius: 5px;
+    }
+}
+
+

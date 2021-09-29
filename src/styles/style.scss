@@ -6,6 +6,8 @@
 		url('../fonts/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
 		url('../fonts/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
 		url('../fonts/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
 	font-family: 'Gilroy-Medium';
@@ -15,6 +17,8 @@
 		url('../fonts/gilroy-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
 		url('../fonts/gilroy-medium.ttf') format('truetype'), /* Safari, Android, iOS */
 		url('../fonts/gilroy-medium.svg#gilroy-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
 	font-family: 'Gilroy-Regular';
@@ -24,78 +28,54 @@
 		url('../fonts/gilroy-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
 		url('../fonts/gilroy-regular.ttf') format('truetype'), /* Safari, Android, iOS */
 		url('../fonts/gilroy-regular.svg#gilroy-regular') format('svg'); /* Chrome < 4, Legacy iOS */
-}
-@font-face {
-    font-family: 'Mazzard H-Medium';
-    src: url('MazzardH-Medium.eot');
-    src: local('Mazzard H Medium'), local('MazzardH-Medium'),
-        url('MazzardH-Medium.eot?#iefix') format('embedded-opentype'),
-        url('MazzardH-Medium.woff2') format('woff2'),
-        url('MazzardH-Medium.woff') format('woff'),
-        url('MazzardH-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Mazzard H-SemiBold';
-    src: url('MazzardH-SemiBold.eot');
-    src: local('Mazzard H SemiBold'), local('MazzardH-SemiBold'),
-        url('MazzardH-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('MazzardH-SemiBold.woff2') format('woff2'),
-        url('MazzardH-SemiBold.woff') format('woff'),
-        url('MazzardH-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Bebas Neue Pro';
-    src: url('BebasNeuePro-Regular.eot');
-    src: local('Bebas Neue Pro Regular'), local('BebasNeuePro-Regular'),
-        url('BebasNeuePro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('BebasNeuePro-Regular.woff2') format('woff2'),
-        url('BebasNeuePro-Regular.woff') format('woff'),
-        url('BebasNeuePro-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+    font-family: 'Mazzard H-Medium';
+    src: url('../fonts/MazzardH-Medium.eot');
+    src: local('Mazzard H Medium'), local('MazzardH-Medium'),
+        url('../fonts/MazzardH-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MazzardH-Medium.woff2') format('woff2'),
+        url('../fonts/MazzardH-Medium.woff') format('woff'),
+        url('../fonts/MazzardH-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-
-body {
-    background: #1B1B1B;
-}
-
-h1 {
-    font-size: 54px;
-    font-family: 'Bebas Neue Pro';
-}
-h2 {
-    font-size: 48px;
-    font-family: 'Bebas Neue Pro';
-}
-h3 {
-    font-size: 44px;
+@font-face {
     font-family: 'Mazzard H-SemiBold';
+    src: url('../fonts/MazzardH-SemiBold.eot');
+    src: local('Mazzard H SemiBold'), local('MazzardH-SemiBold'),
+        url('../fonts/MazzardH-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MazzardH-SemiBold.woff2') format('woff2'),
+        url('../fonts/MazzardH-SemiBold.woff') format('woff'),
+        url('../fonts/MazzardH-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-h4 {
-    font-size: 36px;
-    font-family: 'Mazzard H-SemiBold';
-}
-h5 {
-    font-size: 32px;
-    font-family: 'Gilroy-Regular';
-}
-h6 {
-    font-size: 26px;
-    font-family: 'Gilroy-Medium';
-}
-p {
-    font-size: 24px;
-    font-family: 'Gilroy-Regular';
-}
+@font-face {
+    font-family: 'Bebas Neue Pro';
+    src: local('Bebas Neue Pro Regular'), local('Bebas-Neue-Pro-Regular'),
+        url('../fonts/BebasNeuePro-Regular.woff2') format('woff2'),
+        url('../fonts/BebasNeuePro-Regular.woff') format('woff'),
+        url('../fonts/BebasNeuePro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 
 // @include('./')
-@import "./_header.scss";
+// @import"./_common.scss";
+// @import"./_header.scss";
+// @import"./_doing.scss";
+// @import"./_schedule.scss";
+// @import"./_tour.scss";
+// @import"./_map.scss";
+// @import"./_termsInvestment.scss";
+// @import"./_ourProcess.scss";
+// @import"./_about.scss";
+// @import"./_letsMeet.scss";
+// @import"./_contacts.scss";
+// @import"./_lookAt.scss";
+// @import"./_answers.scss";
+// @import"./_footer.scss";

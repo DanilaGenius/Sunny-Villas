@@ -1,0 +1,113 @@
+.terms {
+    margin-top: 100px;
+    min-height: 900px;
+    width: 100%;
+    
+    &__container {
+        @include flex(flex-start, flex-start)
+    }
+
+    &__inner {
+        @include flex(flex-start, flex-start);
+        margin-top: 80px;
+        margin-right: 45px;
+    }
+
+    &__content {
+        width: 431px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__price-list {
+        margin-bottom: 30px;
+    }
+
+    &__price-elem {
+        border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+        width: 374px;
+        height: 110px;
+        @include flex(space-between, center);
+    }
+
+    &__price-elem:nth-last-child {
+        border-bottom: none;
+    }
+
+    &__product {
+        font-size: 26px;
+        line-height: 140%;
+    }
+
+    &__price-cost {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    &__additional-info-list {
+        margin-bottom: 70px;
+        width: 400px;
+        // list-style-type: symbols;
+        color: #FFFFFF;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    &__additional-info-list-elem {
+        color: #FFFFFF;
+        
+        display: flow-root list-item;
+        margin-bottom: 25px;
+    }
+
+    &__flex {
+        @include flex('', center);
+    }
+
+    &__text {
+        font-family: 'Gilroy-Regular'; 
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 140%;
+        
+    }
+
+    &__bitc-text {
+        width: 280px;
+    }
+    &__bitc {
+        width: 42px;
+        height: 42px;
+    }
+    
+
+    &__price-includes-list {
+       list-style-type: symbols;
+       color: #FFFFFF;
+       font-size: 20px;
+       max-width: 290px;
+       
+    }
+
+    &__price-includes-elem {
+        margin-bottom: 25px;
+        margin-left: 20px;
+    }
+
+    &__price-includes-title {
+        margin-bottom: 25px;
+        font-family: 'Mazzard H-SemiBold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+

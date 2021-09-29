@@ -1,17 +1,189 @@
-.header {
-    width: 100%;
-    max-width: 1620px;
-    height: 100vh;
-    background-image: url('../images/header-bg.png');
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    position: relative;
-    margin: 0 auto;
+$header-max-width: 1620px;
+
+@mixin btn-header {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1.8px solid #FFFFFF;
 }
 
-.header__logo {
-    position: absolute;
-    content: url("../images/logo-header.png");
-    top: 58px;
-    left: 48px;
+.header {
+        width: 100%;
+        max-width: $header-max-width;
+        height: 100vh;
+        background-image: url('../images/header-bg.png');
+        background-repeat: no-repeat;
+        background-position: center top;
+        margin: 0 auto;
+        position: relative;
+        // padding: 440px 0 0 290px;
+
+
+    &__menu {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        min-height: 110px;
+        max-width: $header-max-width;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 56.77%, rgba(0, 0, 0, 0) 100%);
+        backdrop-filter: blur(2px);
+        z-index: 10;
+        transform: translateX(-50%);
+    }
+
+    &__content {
+        max-width: 555px;
+        min-height: 100px;
+        background: transparent;
+    }
+
+    &__logo {
+        position: absolute;
+        content: url("../images/logo-header.png");
+        top: 58px;
+        left: 48px;
+        cursor: pointer;
+    }
 }
+.menu {
+    @include flex(space-between, center);
+    padding: 0 30px;
+   
+    &__title {
+        cursor: pointer;
+    }
+
+    &__content {
+        max-width: 350px;
+        width: 100%;
+        @include flex(space-between, center);
+    }
+
+    &__language {
+        @include flex(center, center);
+        padding-right: 15px;
+        border-right: 1px solid #FFFFFF;
+    }
+
+    &__language-eu {
+        @include btn-header;
+        cursor: pointer;
+    }
+
+    &__language-ru {
+        @include btn-header;
+        cursor: pointer;
+    }
+
+    &__contact {
+        @include btn-header;
+        margin-left: 35px;
+        cursor: pointer;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__open h6 {
+        letter-spacing: 2px;
+        font-size: 19px;
+        @include flex('', center);
+        cursor: pointer;
+    }
+
+    &__burger {
+        height: 14px;
+        width: 14px;
+        border-top: 2.2px solid #FFFFFF;
+        border-bottom: 2.2px solid #FFFFFF;
+        display: inline-block;
+        margin: 0 4px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &__line {
+        width: 100%;
+        height: 2.2px;
+        background: #FFFFFF;
+        margin: 0;
+        padding: 0;
+    }
+}
+.content {
+    width: 554px;
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__subtitle {
+        margin-bottom: 54px;
+    }
+
+    &__table {
+        margin-bottom: 54px;
+        display: grid;
+        grid-template-columns: 100px 350px;
+        grid-template-rows: 40px 50px;
+        color: #FFFFFF;
+    }
+
+    &__table-cell:nth-child(1) {
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        font-size: 18px;
+        letter-spacing: -1px;
+        padding: 0 0 0 5px;
+        @include flex('', flex-start);
+        position: relative;
+    }
+    &__table-cell:nth-child(2) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        font-size: 20px;
+        padding: 0 0 0 26px;
+        @include flex('', flex-start);
+
+    }
+    &__table-cell:nth-child(3) {
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        font-size: 18px;
+        letter-spacing: -1px;
+        padding: 0 0 0 5px;
+        @include flex('', flex-end);
+    }
+    &__table-cell:nth-child(4) {
+        font-size: 20px;
+        padding: 0 0 0 26px;
+        @include flex('', flex-end);
+    }
+    
+    // &__table-cell {
+        
+    // }
+
+    &__tabl-or {
+        position: absolute;
+        left: 30px;
+        bottom: -9px;
+        width: 32px;
+        color: rgba(255, 255, 255, 0.6);
+        background: transparent;
+        text-align: center;
+        z-index: 10;
+    }
+
+    &__btns {
+        width: 100%;
+        @include flex('', center);
+    }
+
+    &__btn {
+        padding: 20px 12px;
+        margin: 0 20px 0 0;
+    }
+
+}
+
+
+

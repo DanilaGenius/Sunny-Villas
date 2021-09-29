@@ -78,5 +78,5 @@ exports.scripts = scripts;
 exports.clearDist = clearDist
 exports.include = include
 
-exports.build = series(clearDist, build)
-exports.start = parallel(styles, watching, browsersync, scripts, include)
+// exports.build = series(clearDist, build)
+exports.s = parallel(styles, watching, browsersync, scripts, include)

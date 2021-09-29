@@ -1,0 +1,36 @@
+.map {
+    padding-top: 128px;
+    &__container {
+        @include flex(flex-end, flex-start)
+    }
+
+    &__img {
+        margin: 50px -13px 0 0;
+    }
+
+    &__inner {
+    }
+
+    &__content {
+        width: 490px;
+    }
+
+    &__title {
+        margin-bottom: 26px;
+    }
+
+    &__list {
+        list-style-type: symbols;
+        color: #FFFFFF;
+    }
+
+    &__list-elem {
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+
+    &__list-text {
+        font-family: 'Gilroy-Regular'; 
+    }
+}
+

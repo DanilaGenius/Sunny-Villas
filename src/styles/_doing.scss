@@ -1,0 +1,33 @@
+.doing {
+    padding: 205px 0 0 0;
+    
+    &__container {
+        @include flex(flex-end, '');
+        
+    }
+
+    &__img {
+        margin-right: 76px;
+    }
+
+    &__inner {
+        @include flex(center, center);
+    }
+
+    &__content {
+        width: 463px;
+    }
+
+    &__title {
+        margin-bottom: 48px;
+    }
+
+    &__subtitle {
+        margin-bottom: 34px;
+
+    }
+
+    &__text {
+        font-family: 'Gilroy-Regular';
+    }
+}

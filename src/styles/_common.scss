@@ -1,0 +1,92 @@
+@mixin flex($horizontal, $vertical) {
+    display: flex;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+@mixin inline-flex($horizontal, $vertical) {
+    display: inline-flex;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1B1B1B;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1370px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 54px;
+    font-family: 'Bebas Neue Pro';  
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+}
+h2 {
+    font-size: 48px;
+    font-family: 'Bebas Neue Pro';  
+    color: #FFFFFF;
+    font-weight: normal;
+    font-style: normal;
+}
+h3 {
+    font-size: 44px;
+    font-family: 'Mazzard H-SemiBold';  
+    color: #FFFFFF;
+    font-weight: normal;
+    font-style: normal;
+}
+h4 {
+    font-size: 36px;
+    font-family: 'Mazzard H-SemiBold';  
+    color: #FFFFFF;
+    font-weight: normal;
+    font-style: normal;
+}
+h5 {
+    font-size: 32px;
+    font-family: 'Gilroy-Regular';  
+    color: #FFFFFF;
+    font-weight: normal;
+    font-style: normal;
+}
+h6 {
+    font-size: 24px;
+    font-family: 'Gilroy-Medium';   
+    font-style: normal;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-style: normal;
+}
+p {
+    font-size: 16px;
+    font-family: 'Gilroy-Regular';
+    color: #FFFFFF;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.btn {
+    border-radius: 2px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.btn:hover {
+    border-color: rgba(255, 255, 255, 1);
+}
