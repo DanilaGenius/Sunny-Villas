@@ -1,0 +1,114 @@
+.answers {
+    padding-top: 100px;
+    width: 100%;
+    min-height: 600px;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+}
+
+.accordion {
+    max-width: $header-max-width;
+    min-height: 600px;
+    position: relative;
+    box-shadow: inset 0px 24px 36px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    margin: 0 auto;
+    @include flex(center, '');
+    
+    &__inner {
+        max-width: 700px;  
+        z-index: 10;
+    }
+    &::before {
+        position: absolute;
+        content: '';
+        background: radial-gradient(33.33% 33.33% at 50% 71.76%, #22CED9 0%, rgba(34, 206, 217, 0) 100%);
+        opacity: 0.3;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+        width: 100%;
+        height: 100%;
+        bottom: -150px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        background: radial-gradient(38.49% 58.22% at 50% 94.34%, #22CED9 0%, rgba(34, 206, 217, 0) 100%);
+        opacity: 0.3;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(-180deg);
+    }
+
+    &__list {
+        list-style-type: none;
+        
+    }
+
+    &__list-elem {
+        width: 700px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    &__header {
+        height: 120px;
+        @include flex(space-between, center);
+        padding: 0px 30px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    &__header:hover {
+        background: rgba(255, 255, 255, 0.2);;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 140%;
+        max-width: 500px;
+    }
+
+    &__open {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+    }
+    
+    &__open-line {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 40px;
+        height: 3px;
+        background: radial-gradient(38.49% 58.22% at 50% 94.34%, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+        z-index: 5;
+    }
+
+    &__open-line:nth-child(2) {
+        transform: rotate(90deg) translate(0, 50%);
+        top: 50%;
+        left: 0;
+    }
+    
+
+    &__content {
+        padding: 30px 30px;
+        display: none;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+    }
+}

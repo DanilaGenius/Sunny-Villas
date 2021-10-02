@@ -1,0 +1,67 @@
+.meet {
+    width: 100%;
+    min-height: 165px;
+    
+    &__container {
+        @include flex('', center);
+        flex-direction: column;
+        // overflow: hidden;
+    }
+    
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        margin-bottom: 35px;
+        max-width: 300px;
+    }
+
+    &__gallery {
+        height: 230px;
+        width: 100%;
+        @include flex(center, '');
+    }
+
+    &__gallery-list {
+        @include flex('', '');
+        width: $header-max-width;
+        list-style-type: none;
+    }
+
+    &__gallery-elem {
+        margin: 0 -20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__gallery-content {
+        position: absolute;
+        left: 45px;
+        bottom: 30px;
+        height: 80px;
+    }
+
+    &__gallery-title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 34px;
+        text-transform: uppercase;
+        margin-bottom: 13px;
+        width: 300px;
+    }
+
+    &__gallery-text {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 21px;
+        opacity: 0.9;
+        max-width: 250px;
+    }
+	
+}
+
+
