@@ -18,11 +18,13 @@
     overflow: hidden;
     margin: 0 auto;
     @include flex(center, '');
-    
+
     &__inner {
-        max-width: 700px;  
+        max-width: 700px;
+        width: 100%;
         z-index: 10;
     }
+
     &::before {
         position: absolute;
         content: '';
@@ -50,11 +52,11 @@
 
     &__list {
         list-style-type: none;
-        
+
     }
 
     &__list-elem {
-        width: 700px;
+        width: 100%;
         border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
@@ -66,7 +68,8 @@
     }
 
     &__header:hover {
-        background: rgba(255, 255, 255, 0.2);;
+        background: rgba(255, 255, 255, 0.2);
+        ;
     }
 
     &__title {
@@ -84,12 +87,12 @@
         position: relative;
         z-index: 10;
     }
-    
+
     &__open-line {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         width: 40px;
         height: 3px;
         background: radial-gradient(38.49% 58.22% at 50% 94.34%, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
@@ -101,7 +104,7 @@
         top: 50%;
         left: 0;
     }
-    
+
 
     &__content {
         padding: 30px 30px;

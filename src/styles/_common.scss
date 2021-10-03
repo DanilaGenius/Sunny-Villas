@@ -3,6 +3,7 @@
     justify-content: $horizontal;
     align-items: $vertical;
 }
+
 @mixin inline-flex($horizontal, $vertical) {
     display: inline-flex;
     justify-content: $horizontal;
@@ -10,16 +11,16 @@
 }
 
 @mixin btn-gradient($width, $padding) {
-    padding: $padding; 
+    padding: $padding;
     background: radial-gradient(50.66% 1283.5% at 46.52% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
     max-width: $width;
     width: 100%;
     cursor: pointer;
-    font-family: 'Gilroy-Regular'; 
+    font-family: 'Gilroy-Regular';
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    color:rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
     text-align: center;
     opacity: 0.8;
 }
@@ -33,12 +34,12 @@
     padding: $padding;
     max-width: $width;
     width: 100%;
-    font-family: 'Gilroy-Regular';  
+    font-family: 'Gilroy-Regular';
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 130%;
-    color:rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 * {
@@ -62,48 +63,53 @@ body {
 
 h1 {
     font-size: 54px;
-    font-family: 'Bebas Neue Pro';  
+    font-family: 'Bebas Neue Pro';
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: normal;
     font-style: normal;
     line-height: 62px;
 }
+
 h2 {
     font-size: 48px;
-    font-family: 'Bebas Neue Pro';  
+    font-family: 'Bebas Neue Pro';
     color: #FFFFFF;
     font-weight: normal;
     font-style: normal;
     line-height: 55px;
 }
+
 h3 {
     font-size: 44px;
-    font-family: 'Mazzard H-SemiBold';  
+    font-family: 'Mazzard H-SemiBold';
     color: #FFFFFF;
     font-weight: normal;
     font-style: normal;
     line-height: 140%;
 }
+
 h4 {
     font-size: 36px;
-    font-family: 'Mazzard H-SemiBold';  
+    font-family: 'Mazzard H-SemiBold';
     color: #FFFFFF;
     font-weight: normal;
     font-style: normal;
     line-height: 140%;
 }
+
 h5 {
     font-size: 32px;
-    font-family: 'Gilroy-Regular';  
+    font-family: 'Gilroy-Regular';
     color: #FFFFFF;
     font-weight: normal;
     font-style: normal;
     line-height: 130%;
 }
+
 h6 {
     font-size: 24px;
-    font-family: 'Gilroy-Regular';   
+    font-family: 'Gilroy-Regular';
     font-style: normal;
     font-weight: 500;
     color: #FFFFFF;
@@ -111,6 +117,7 @@ h6 {
     font-style: normal;
     line-height: 130%;
 }
+
 p {
     font-size: 16px;
     font-family: 'Gilroy-Regular';
@@ -126,10 +133,27 @@ a {
     font-style: normal;
 }
 
+img {
+    width: 100%;
+}
+
 .btn-gradient:hover {
     opacity: 1;
 }
 
 .btn-standart:hover {
     border-color: rgba(255, 255, 255, 1);
+}
+
+.img-gradient {
+    position: relative;
+}
+.img-gradient::before {
+    position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, ) 0%, rgba(0, 0, 0,  0.2) 17.43%, rgba(0, 0, 0,  0.2) 80.24%, rgba(0, 0, 0,  0) 100%);
 }

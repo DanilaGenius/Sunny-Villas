@@ -48,6 +48,11 @@
         display: flex;
         overflow: hidden;
         width: 1011px;
+        height: 665px;
+    }
+
+    &__elem {
+        width: auto;
     }
 
     &__arrow-left, &__arrow-right {
