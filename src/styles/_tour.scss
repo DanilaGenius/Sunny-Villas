@@ -1,17 +1,13 @@
 .tour {
     padding-top: 190px;
-    &_btn {
-        padding: 28px 72px; 
+    &__btn {
         margin-top: 22px;
-        background: radial-gradient(50.66% 1283.5% at 46.52% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
-        max-width: 326px;
-        cursor: pointer;
+        @include  btn-gradient(330px, 28px 72px)
     }
 
     &__container {
         @include flex(flex-start, flex-end);
     }
-
 
     &__content {
         margin-right: 101px;

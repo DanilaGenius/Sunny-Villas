@@ -50,9 +50,7 @@
 
     &__btn {
         margin-top: 5px;
-        text-transform: uppercase;
-        padding: 14px 24px;
-        @include  inline-flex(center, center);
+        @include btn-standart(216px, 14px 24px);
         position: relative;
     }
 
