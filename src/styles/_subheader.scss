@@ -1,0 +1,121 @@
+.subheader {
+    display: none;
+}
+
+@media (max-width: 360px) {
+    .subheader {
+        display: block;
+		padding: 15px 15px 15px 10px;
+		position: relative;
+		min-height: 540px;
+
+		&::before {
+			position: absolute;
+			content: url('../images/subheader-bg-mob.png');
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			z-index: -2;
+		}
+
+		&__title {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 26px;
+			
+		}
+
+		&__subtitle {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 17px;
+			margin-top: 10px;
+		}
+
+		&__table {
+			margin-bottom: 15px;
+			margin-top: 10px;
+			width: 100%;
+			max-width: 260px;
+			@include flex(space-between, center);
+		}
+
+		&__cell {
+			@include flex(space-between, center);
+			color: #FFFFFF;
+			font-family: 'Gilroy-Regular';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 99.8%;
+			max-width: 100px;
+			width: 100%;
+		}
+
+		&__table-big {
+			margin-right: 8px;
+			font-family: 'Bebas Neue Pro';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 30px;
+			line-height: 36px;
+		}
+
+		&__text {
+		}
+
+		&__or {
+			margin: 20px auto 10px auto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			text-transform: uppercase;
+			opacity: 0.9;
+			width: 45px;
+			position: relative;
+			text-align: center;
+		}
+
+		&__or::after {
+			content: "";
+			position: absolute;
+			left: 100%;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 150px;
+			opacity: 0.6;
+			box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
+			border: 1px solid rgba(255, 255, 255, 0.5);
+			border-end-end-radius: 100%;
+			border-start-end-radius: 100%;
+		}
+		&__or::before {
+			content: "";
+			position: absolute;
+			right: 100%;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 150px;
+			opacity: 0.6;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border: 1px solid rgba(255, 255, 255, 0.5);
+			border-end-start-radius: 100%;
+			border-start-start-radius: 100%;
+		}
+
+		&__btns {
+			@include flex(space-between, center);
+			margin-top: 25px;
+		}
+
+		&__btn {
+			@include btn-standart(145px, 10px 14px);
+			font-size: 12px;
+		}
+		
+		&__btn:nth-child(1) {
+			margin-right: 10px;
+		}
+}
+
+}

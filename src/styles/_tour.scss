@@ -64,6 +64,7 @@
         backdrop-filter: blur(2px);
         transform: matrix(1, 0, 0, -1, 0, 0);
         @include flex(center, center);
+        z-index: 1000;
     }
 
     &__arrow-left {
@@ -113,6 +114,489 @@
         transform: rotate(-45deg);
         border-radius: 5px;
     }
+}
+
+@media (max-width: 1650px) {
+    .tour {
+
+		&__container {
+            justify-content: space-between;
+            align-items: flex-end;
+		}
+
+		&__inner {
+		}
+
+		&__content {
+            margin-right: 80px;
+		}
+
+		&__title {
+            font-size: 24px;
+		}
+
+		&__subtitle {
+            font-size: 20px;
+		}
+
+		&__text {
+            font-size: 17px;
+		}
+
+		&__btn {
+            font-size: 17px;
+		}
+
+		&__slider {
+		}
+}
+    .slider {
+        width: 815px;
+        height: 530px;
+		&__frame {
+            width: 100%;
+		}
+
+		&__elem {
+            width: 815px;
+            height: 530px;
+		}
+
+		&__arrow-left {
+		}
+
+		&__line {
+		}
+
+		&__arrow-right {
+		}
+
+		&__line-right {
+		}
+}
+
+}
+@media (max-width: 1450px) {
+    .tour {
+
+		&__container {
+            padding-left: 100px;
+		}
+
+		&__inner {
+		}
+
+		&__content {
+            margin-right: 0;
+		}
+
+		&__title {
+            max-width: 345px;
+		}
+
+		&__subtitle {
+            margin-bottom: 60px;
+            max-width: 300px;	
+        }
+
+		&__text {
+            
+		}
+
+		&__btn {
+		}
+
+		&__slider {
+		}
+}
+    .slider {
+
+		&__frame {
+		}
+
+		&__elem {
+		}
+
+		&__arrow-left {
+		}
+
+		&__line {
+		}
+
+		&__arrow-right {
+		}
+
+		&__line-right {
+		}
+}
+}
+@media (max-width: 1279px) {
+    .tour {
+        padding-top: 100px;
+		&__container {
+            justify-content: flex-start;
+		}
+
+		&__inner {
+		}
+
+		&__content {
+		}
+
+		&__title {
+		}
+
+		&__subtitle {
+		}
+
+		&__text {
+		}
+
+		&__btn {
+		}
+
+		&__slider {
+		}
+}
+    .slider {
+        width: 100%;
+        height: 100%;
+        
+		&__frame {
+            width: 100%;
+            height: 100%;
+            
+		}
+
+		&__elem {
+            width: auto;
+            max-width: 100%;
+            
+            
+		}
+
+		&__arrow-left {
+		}
+
+		&__line {
+		}
+
+		&__arrow-right {
+		}
+
+		&__line-right {
+		}
+}
+}
+@media (max-width: 1100px) {
+    .tour {
+
+		&__container {
+            padding-left: 40px;
+            align-items: center;
+		}
+
+		&__inner {
+		}
+
+		&__content {
+		}
+
+		&__title {
+		}
+
+		&__subtitle {
+		}
+
+		&__text {
+		}
+
+		&__btn {
+		}
+
+		&__slider {
+		}
+}
+    .slider {
+
+		&__frame {
+		}
+
+		&__elem {
+            height: 100%;
+		}
+
+		&__arrow-left {
+            width: 103.86px;
+            height: 83.09px;
+            bottom: 35px;
+            left: -40px;
+		}
+
+		&__line {
+            width: 50px;
+		}
+
+		&__arrow-right {
+            width: 103.86px;
+            height: 83.09px;
+            bottom: 35px;
+            left: 80px;
+		}
+
+		&__line-right {
+            
+		}
+}
+}
+@media (max-width: 900px) {
+    .tour {
+
+		&__container {
+            align-items: flex-start;
+		}
+
+		&__inner {
+		}
+
+		&__content {
+            padding-top: 40px;
+		}
+
+		&__title {
+            font-size: 18px;
+		}
+
+		&__subtitle {
+            font-size: 17px;
+		}
+
+		&__text {
+            font-size: 17px;
+		}
+
+		&__btn {
+            font-size: 17px;
+		}
+
+		&__slider {
+		}
+}
+    .slider {
+
+		&__frame {
+		}
+
+		&__elem {
+		}
+
+		&__arrow-left {
+		}
+
+		&__line {
+		}
+
+		&__arrow-right {
+		}
+
+		&__line-right {
+		}
+}
+}
+@media (max-width: 768px) {
+    .tour {
+        min-height: 450px;
+        position: relative;
+		&__container {
+            
+		}
+
+		&__inner {
+            
+		}
+
+		&__content {
+            max-width: 250px;
+            margin-right: 50px;
+            
+		}
+
+
+		&__title {
+		}
+
+		&__subtitle {
+            margin-bottom: 0;
+		}
+
+        &__content-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 480px;
+        }
+
+		&__text {
+           
+           
+		}
+
+		&__btn {
+            margin: 0;
+            max-width: 255px;
+            padding: 20px 30px;
+		}
+
+		&__slider {
+		}
+}
+    .slider {
+
+		&__frame {
+		}
+
+		&__elem {
+		}
+
+		&__arrow-left {
+		}
+
+		&__line {
+		}
+
+		&__arrow-right {
+		}
+
+		&__line-right {
+		}
+}
+}
+@media (max-width: 680px) {
+    .tour {
+        padding-top: 50px;
+        margin-bottom: 50px;
+        min-height: auto;
+		&__container {
+            align-items: flex-end;
+            padding: 0;
+		}
+
+		&__inner {
+            
+		}
+
+		&__content {
+            padding: 0;
+            margin: 0;
+            max-width: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 30px;
+            z-index: 1;
+		}
+
+		&__title {
+            
+		}
+
+		&__subtitle {
+            
+		}
+
+		&__text {
+            display: none;
+		}
+
+		&__btn {
+            display: none;
+		}
+
+		&__slider {
+		}
+}
+    .slider {
+        position: relative;
+
+		&__frame {
+		}
+
+		&__elem {
+		}
+
+		&__arrow-left {
+            display: none;
+		}
+
+		&__line {
+		}
+
+		&__arrow-right {
+            left: auto;
+            right: 0;
+            bottom: 0;
+		}
+
+		&__line-right {
+		}
+}
+}
+@media (max-width: 410px) {
+    .tour {
+
+		&__container {
+		}
+
+		&__inner {
+		}
+
+		&__content {
+            max-width: 300px;
+            left: 10px;
+		}
+
+		&__title {
+            margin-bottom: 20px;
+		}
+
+		&__subtitle {
+            max-width: 250px;
+		}
+
+		&__text {
+		}
+
+		&__btn {
+		}
+
+		&__slider {
+		}
+}
+    .slider {
+
+		&__frame {
+		}
+
+		&__elem {
+		}
+
+		&__arrow-left {
+		}
+
+		&__line {
+		}
+
+		&__arrow-right {
+		}
+
+		&__line-right {
+		}
+}
 }
 
 

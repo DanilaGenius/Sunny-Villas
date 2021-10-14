@@ -16,7 +16,7 @@ $header-max-width: 1620px;
     background-position: center top;
     margin: 0 auto;
     position: relative;
-    padding: 10vh 0 0 15vw;
+    padding: 20vh 0 0 15vw;
     z-index: 0;
    
     &::before {
@@ -30,8 +30,6 @@ $header-max-width: 1620px;
         z-index: -10;
     }
     
-
-
     &__menu {
         position: absolute;
         top: 0;
@@ -68,7 +66,8 @@ $header-max-width: 1620px;
         position: absolute;
         top: 0;
         right: 0;
-        width: 430px;
+        max-width: 430px;
+        width: 100%;
         height: 100vh;
         background: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(24px);
@@ -190,6 +189,8 @@ $header-max-width: 1620px;
 
     &__title {
         margin-bottom: 24px;
+        max-width: 400px;
+       
     }
 
     &__subtitle {
@@ -244,7 +245,7 @@ $header-max-width: 1620px;
         color: rgba(255, 255, 255, 0.6);
         background: transparent;
         text-align: center;
-        z-index: 10;
+        z-index: 0;
     }
 
     &__btns {
@@ -332,4 +333,654 @@ $header-max-width: 1620px;
         color: #FFFFFF;
         opacity: 0.9;
     }
+}
+
+@media (max-width: 1280px) {
+    .header {
+        background-image: url('../images/header-bg1280.png');
+        max-height: 720px;
+		&__menu {
+		}
+
+		&__content {
+		}
+
+		&__logo {
+		}
+
+		&__aside {
+		}
+}
+.menu {
+
+		&__content {
+		}
+
+		&__inner {
+		}
+
+		&__language {
+		}
+
+		&__language-eu {
+		}
+
+		&__language--select {
+		}
+
+		&__language-ru {
+		}
+
+		&__contact {
+		}
+
+		&__call {
+		}
+
+		&__burger {
+		}
+
+		&__burger-open {
+		}
+}
+.content {
+
+		&__title {
+  
+		}
+
+		&__subtitle {
+		}
+
+		&__table {
+		}
+
+		&__table-cell {
+		}
+
+		&__tabl-or {
+		}
+
+		&__btns {
+		}
+
+		&__btn {
+		}
+}
+.aside {
+
+		&__title {
+		}
+
+		&__navbar {
+		}
+
+		&__navbar-elem {
+		}
+
+		&__text {
+		}
+
+		&__links {
+		}
+
+		&__link {
+		}
+
+		&__mail {
+		}
+}
+
+}
+@media (max-width: 768px) {
+    .header {
+        background-image: url('../images/header-bg768.png');
+        max-height: 522px;
+		&__menu {
+		}
+
+		&__content {
+		}
+
+		&__logo {
+		}
+
+		&__aside {
+		}
+}
+.menu {
+
+		&__content {
+		}
+
+		&__inner {
+		}
+
+		&__language {
+		}
+
+		&__language-eu {
+		}
+
+		&__language--select {
+		}
+
+		&__language-ru {
+		}
+
+		&__contact {
+		}
+
+		&__call {
+		}
+
+		&__burger {
+		}
+
+		&__burger-open {
+		}
+}
+.content {
+
+		&__title {
+            font-size: 32px;
+            max-width: 320px;
+            line-height: 38px;
+            margin-bottom: 15px;
+		}
+
+		&__subtitle {
+            margin-bottom: 20px;
+		}
+
+		&__table {
+            margin-bottom: 30px;
+		}
+
+		&__table-cell {
+		}
+
+		&__tabl-or {
+		}
+
+		&__btns {
+		}
+
+		&__btn {
+		}
+}
+.aside {
+        max-height: 522px;
+		&__title {
+		}
+
+		&__navbar {
+		}
+
+		&__navbar-elem {
+		}
+
+		&__text {
+		}
+
+		&__links {
+		}
+
+		&__link {
+		}
+
+		&__mail {
+		}
+}
+
+}
+@media (max-width: 635px) {
+.header {
+        padding: 20vh 0 0 2vw;
+       
+		&__menu {
+		}
+
+		&__content {
+		}
+
+		&__logo {
+            content: url("../images/logo-mini.png");
+            top: 30px;
+            left: 35px;
+		}
+
+		&__aside {
+		}
+}
+.menu {
+
+		&__content {
+		}
+
+		&__inner {
+		}
+
+		&__language {
+		}
+
+		&__language-eu {
+		}
+
+		&__language--select {
+		}
+
+		&__language-ru {
+		}
+
+		&__contact {
+		}
+
+		&__call {
+		}
+
+		&__burger {
+		}
+
+		&__burger-open {
+		}
+}
+.content {
+
+		&__title {
+            
+		}
+
+		&__subtitle {
+            max-width: 320px;
+		}
+
+		&__table {
+            
+		}
+
+		&__table-cell {
+		}
+
+		&__tabl-or {
+		}
+
+		&__btns {
+            
+		}
+
+		&__btn {
+            padding: 10px 5px;
+            max-width: 200px;
+		}
+}
+
+.aside {
+
+		&__title {
+		}
+
+		&__navbar {
+		}
+
+		&__navbar-elem {
+		}
+
+		&__text {
+		}
+
+		&__links {
+		}
+
+		&__link {
+		}
+
+		&__mail {
+		}
+}
+
+}
+@media (max-width: 500px) {
+.header {
+		&__menu {
+		}
+
+		&__content {
+		}
+
+		&__logo {
+		}
+
+		&__aside {
+		}
+}
+.menu {
+
+		&__content {
+            justify-content: flex-end;
+		}
+
+		&__inner {
+		}
+
+		&__language {
+            border-right: none;
+		}
+
+		&__language-eu {
+		}
+
+		&__language--select {
+		}
+
+		&__language-ru {
+            display: none;
+		}
+
+		&__contact {
+            display: none;
+		}
+
+		&__call {
+		}
+
+		&__burger {
+		}
+
+		&__burger-open {
+		}
+}
+.content {
+
+		&__title {
+            
+		}
+
+		&__subtitle {
+           
+		}
+
+		&__table {
+            
+		}
+
+		&__table-cell {
+		}
+
+		&__tabl-or {
+		}
+
+		&__btns {
+		}
+
+		&__btn {
+		}
+}
+.aside {
+
+		&__title {
+            font-size: 28px;
+		}
+
+		&__navbar {
+            margin-bottom: 30px;
+		}
+
+		&__navbar-elem {
+            padding: 13px 0;
+		}
+
+		&__text {
+            margin-bottom: 20px;
+		}
+
+		&__links {
+            margin-bottom: 20px;
+            padding: 0 10px;
+		}
+
+		&__link {
+            font-size: 20px;
+            
+		}
+
+		&__mail {
+		}
+}
+
+}
+@media (max-width: 435px) {
+    .header {
+        padding: 15vh 0 0 2vw;
+            &__menu {
+            }
+    
+            &__content {
+            }
+    
+            &__logo {
+            }
+    
+            &__aside {
+            }
+    }
+    .menu {
+    
+            &__content {
+                
+            }
+    
+            &__inner {
+            }
+    
+            &__language {
+                
+            }
+    
+            &__language-eu {
+            }
+    
+            &__language--select {
+            }
+    
+            &__language-ru {
+                
+            }
+    
+            &__contact {
+               
+            }
+    
+            &__call {
+            }
+    
+            &__burger {
+            }
+    
+            &__burger-open {
+            }
+    }
+    .content {
+            width: auto;
+            padding: 0 5px;
+            &__title {
+                
+            }
+    
+            &__subtitle {
+               
+            }
+    
+            &__table {
+                margin-bottom: 20px;
+                
+            }
+    
+            &__table-cell {
+            }
+
+            &__table-cell:nth-child(1) {
+                
+            }
+        
+            &__table-cell:nth-child(2) {
+               padding: 0 0 0 10px;
+               font-size: 17px;
+        
+            }
+        
+            &__table-cell:nth-child(3) {
+               
+            }
+        
+            &__table-cell:nth-child(4) {
+                padding: 0 0 0 10px;
+                font-size: 17px;
+            }
+    
+            &__tabl-or {
+            }
+    
+            &__btns {
+                display: block;
+            }
+    
+            &__btn {
+                max-width: 100%;
+                margin: 0 0 10px 0;
+            }
+    }
+    .aside {
+    
+            &__title {
+                
+            }
+    
+            &__navbar {
+                
+            }
+    
+            &__navbar-elem {
+                
+            }
+    
+            &__text {
+               
+            }
+    
+            &__links {
+               
+            }
+    
+            &__link {
+               
+                
+            }
+    
+            &__mail {
+            }
+    }
+    
+    }
+@media (max-width: 360px) {
+.header {
+        background-image: url('../images/header-bg434.png');
+        max-height: 296px;
+		&__menu {
+		}
+
+		&__content {
+		}
+
+		&__logo {
+		}
+
+		&__aside {
+		}
+}
+.menu {
+
+		&__content {
+		}
+
+		&__inner {
+		}
+
+		&__language {
+		}
+
+		&__language-eu {
+		}
+
+		&__language--select {
+		}
+
+		&__language-ru {
+		}
+
+		&__contact {
+		}
+
+		&__call {
+		}
+
+		&__burger {
+		}
+
+		&__burger-open {
+		}
+}
+.content {
+        display: none;
+		&__title {
+            font-size: 32px;
+            max-width: 320px;
+            line-height: 38px;
+            margin-bottom: 15px;
+		}
+
+		&__subtitle {
+            margin-bottom: 20px;
+		}
+
+		&__table {
+            margin-bottom: 30px;
+		}
+
+		&__table-cell {
+		}
+
+		&__tabl-or {
+		}
+
+		&__btns {
+		}
+
+		&__btn {
+		}
+}
+.aside {
+    height: 100vh;
+		&__title {
+		}
+
+		&__navbar {
+		}
+
+		&__navbar-elem {
+		}
+
+		&__text {
+		}
+
+		&__links {
+		}
+
+		&__link {
+		}
+
+		&__mail {
+		}
+}
+
 }

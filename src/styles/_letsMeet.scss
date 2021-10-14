@@ -5,7 +5,6 @@
     &__container {
         @include flex('', center);
         flex-direction: column;
-        // overflow: hidden;
     }
     
     &__title {
@@ -14,19 +13,64 @@
     }
 
     &__subtitle {
+        font-weight: 100;
+        font-size: 26px;
+        margin-bottom: 30px;
+        display: none;
+    }
+
+    &__text {
         margin-bottom: 35px;
         max-width: 300px;
     }
-
+    
     &__gallery {
         height: 230px;
+        max-width: $header-max-width;
         width: 100%;
-        @include flex(center, '');
+        @include flex(flex-start, '');
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
     }
+
+    &__gallery__array-left, &__gallery__array-right {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100px;
+        z-index: 10;
+        opacity: 0.6;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+
+    &__gallery__array-left {
+        left: 0;
+        background: linear-gradient(-270deg, #1B1B1B 0%, rgba(27, 27, 27, 0.6) 49.78%, rgba(27, 27, 27, 0) 100%);
+        justify-content: flex-start;
+    }
+
+    &__gallery__array-right { 
+        right: 0;
+        background: linear-gradient(270deg, #1B1B1B 0%, rgba(27, 27, 27, 0.6) 49.78%, rgba(27, 27, 27, 0) 100%); 
+        justify-content: flex-end;
+    }
+
+    &__gallery__array-left:hover, &__gallery__array-right:hover {
+        opacity: 1;
+    }
+
+    &__gallery__array-left-arr, &__gallery__array-right-arr {
+        width: 25px;
+    }
+
 
     &__gallery-list {
         @include flex('', '');
-        width: $header-max-width;
+        width: auto;
         list-style-type: none;
     }
 
@@ -34,6 +78,11 @@
         margin: 0 -20px;
         position: relative;
         overflow: hidden;
+        width: 360px;
+    }
+
+    &__gallery-elem:first-child, &__gallery-elem:last-child {
+        margin: 0 0;
     }
 
     &__gallery-content {
@@ -62,6 +111,237 @@
         max-width: 250px;
     }
 	
+}
+
+@media (max-width: 1280px) {
+    .meet {
+
+		&__container {
+		}
+
+		&__title {
+		}
+
+		&__subtitle {
+		}
+
+		&__gallery {
+		}
+
+		&__gallery-list {
+		}
+
+		&__gallery-elem {
+		}
+
+		&__gallery-img {
+		}
+
+		&__gallery-content {
+		}
+
+		&__gallery-title {
+		}
+
+		&__gallery-text {
+		}
+}
+
+}
+@media (max-width: 768px) {
+    .meet {
+
+		&__container {
+		}
+
+		&__title {
+		}
+
+		&__subtitle {
+		}
+
+		&__gallery {
+		}
+
+		&__gallery-list {
+		}
+
+		&__gallery-elem {
+		}
+
+		&__gallery-img {
+		}
+
+		&__gallery-content {
+		}
+
+		&__gallery-title {
+		}
+
+		&__gallery-text {
+		}
+}
+}
+@media (max-width: 670px) {
+    .meet {
+
+		&__container {
+		}
+
+		&__title {
+		}
+
+		&__subtitle {
+		}
+
+		&__gallery {
+            height: 100%;
+		}
+
+		&__gallery-list {
+            flex-wrap: wrap;
+            justify-content: space-between;
+		}
+
+		&__gallery-elem {
+            max-width: 320px;
+            margin: 0;
+		}
+
+		&__gallery-img {
+		}
+
+		&__gallery-content {
+		}
+
+		&__gallery-title {
+		}
+
+		&__gallery-text {
+		}
+
+        &__gallery__array-left, &__gallery__array-right {
+            display: none;
+        } 
+
+        
+        
+}
+}
+@media (max-width: 640px) {
+    .meet {
+
+		&__container {
+		}
+
+		&__title {
+		}
+
+		&__subtitle {
+		}
+
+		&__gallery {
+            justify-content: center;
+		}
+
+		&__gallery-list {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            
+		}
+
+		&__gallery-elem {
+            
+		}
+
+		&__gallery-img {
+		}
+
+		&__gallery-content {
+		}
+
+		&__gallery-title {
+		}
+
+		&__gallery-text {
+		}
+}
+}
+@media (max-width: 485px) {
+    .meet {
+
+		&__container {
+            align-items: flex-start;
+            padding-left: 30px;
+		}
+
+		&__title {
+            display: none;
+		}
+
+		&__subtitle {
+            display: block;
+		}
+
+        &__text {
+            display: none;
+        }
+
+		&__gallery {
+		}
+
+		&__gallery-list {
+		}
+
+		&__gallery-elem {
+		}
+
+		&__gallery-img {
+		}
+
+		&__gallery-content {
+		}
+
+		&__gallery-title {
+		}
+
+		&__gallery-text {
+		}
+}
+}
+@media (max-width: 360px) {
+    .meet {
+
+		&__container {
+		}
+
+		&__title {
+		}
+
+		&__subtitle {
+		}
+
+		&__gallery {
+		}
+
+		&__gallery-list {
+		}
+
+		&__gallery-elem {
+		}
+
+		&__gallery-img {
+		}
+
+		&__gallery-content {
+		}
+
+		&__gallery-title {
+		}
+
+		&__gallery-text {
+		}
+}
 }
 
 

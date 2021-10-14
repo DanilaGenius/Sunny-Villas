@@ -4,7 +4,8 @@
     width: 100%;
     
     &__container {
-        @include flex(flex-start, flex-start)
+        @include flex(flex-start, flex-start);
+        padding-left: 10px;
     }
 
     &__inner {
@@ -111,5 +112,352 @@
     &__img {
         width: 100%; 
     }
+}
+
+@media (max-width: 1280px) {
+.terms {
+
+		&__container {
+            justify-content: flex-end;
+		}
+
+		&__inner {
+		}
+
+		&__content {
+		}
+
+		&__title {
+		}
+
+		&__price-list {
+		}
+
+		&__price-elem {
+		}
+
+		&__product {
+		}
+
+		&__price-cost {
+		}
+
+		&__additional-info-list {
+		}
+
+		&__additional-info-list-elem {
+		}
+
+		&__flex {
+		}
+
+		&__bitc-text {
+		}
+
+		&__text {
+		}
+
+		&__bitc {
+		}
+
+		&__price-includes-list {
+		}
+
+		&__price-includes-title {
+		}
+
+		&__price-includes-elem {
+		}
+
+		&__img {
+            width: 639.67px;
+            height: 532.19px;
+            overflow: hidden;
+            
+		}
+
+        &__img img {
+            object-position: -85px;
+            width: 800.89px;
+            height: 535.66px;
+		}
+}
+}
+@media (max-width: 768px) {
+.terms {
+
+		&__container {
+            padding: 0 0 0 50px;
+		}
+
+		&__inner {
+		}
+
+		&__content {
+		}
+
+		&__title {
+            font-size: 36px;
+		}
+
+		&__price-list {
+		}
+
+		&__price-elem {
+            font-size: 24px;
+		}
+
+		&__product {
+            font-size: 24px;
+		}
+
+		&__price-cost {
+            font-size: 26px;
+		}
+
+		&__additional-info-list {
+		}
+
+		&__additional-info-list-elem {
+            
+		}
+
+		&__flex {
+		}
+
+		&__bitc-text {
+
+		}
+
+		&__text {
+            font-size: 20px;
+		}
+
+		&__bitc {
+		}
+
+		&__price-includes-list {
+		}
+
+		&__price-includes-title {
+            font-size: 24px;
+		}
+
+		&__price-includes-elem {
+		}
+
+		&__img {
+            background-image: url("../images/terms768px.png");
+            width: 488px;
+            height: 385px;
+            margin-left: -245px;
+            z-index: -1;
+		}
+
+        &__img img {
+            display: none;
+		}
+}
+}
+@media (max-width: 635px) {
+ .terms {
+
+		&__container {
+		}
+
+		&__inner {
+		}
+
+		&__content {
+		}
+
+		&__title {
+		}
+
+		&__price-list {
+		}
+
+		&__price-elem {
+		}
+
+		&__product {
+		}
+
+		&__price-cost {
+		}
+
+		&__additional-info-list {
+		}
+
+		&__additional-info-list-elem {
+		}
+
+		&__flex {
+		}
+
+		&__bitc-text {
+		}
+
+		&__text {
+		}
+
+		&__bitc {
+		}
+
+		&__price-includes-list {
+		}
+
+		&__price-includes-title {
+		}
+
+		&__price-includes-elem {
+		}
+
+		&__img {
+		}
+} 
+}
+@media (max-width: 500px) {
+ .terms {
+        margin-top: 20px;
+		&__container {
+            padding: 110px 20px 0 25px;
+            position: relative;
+		}
+        &__container::before {
+            position: absolute;
+            content: url('../images/terms768px.png');
+            top: 0;
+            left: 0;
+            // width: 100%;
+            z-index: -1;
+        }
+
+		&__inner {
+            margin: 0;
+		}
+
+		&__content {
+            width: 100%;
+		}
+
+		&__title {
+            font-size: 30px;
+		}
+
+		&__price-list {
+            
+		}
+
+		&__price-elem {
+            width: 100%;
+		}
+
+		&__product {
+            font-size: 17px;
+		}
+
+		&__price-cost {
+            font-size: 22px;
+		}
+
+		&__additional-info-list {
+            width: 100%;
+            margin: 0 0 30px 0;
+		}
+
+		&__additional-info-list-elem {
+		}
+
+		&__flex {
+		}
+
+		&__bitc-text {
+            width: 240px;
+		}
+
+		&__text {
+            font-size: 17px;
+		}
+
+		&__bitc {
+		}
+
+		&__price-includes-list {
+		}
+
+		&__price-includes-title {
+            font-size: 20px;
+		}
+
+		&__price-includes-elem {
+		}
+
+		&__img {
+            display: none;
+		}
+}
+}
+@media (max-width: 360px) {
+ .terms {
+
+		&__container {
+            padding: 110px 10px 0 10px;
+		}
+        &__container::before {
+            content: url('../images/terms-bg-mob.png');
+        }
+
+		&__inner {
+		}
+
+		&__content {
+		}
+
+		&__title {
+		}
+
+		&__price-list {
+		}
+
+		&__price-elem {
+		}
+
+		&__product {
+		}
+
+		&__price-cost {
+		}
+
+		&__additional-info-list {
+		}
+
+		&__additional-info-list-elem {
+		}
+
+		&__flex {
+		}
+
+		&__bitc-text {
+		}
+
+		&__text {
+		}
+
+		&__bitc {
+		}
+
+		&__price-includes-list {
+		}
+
+		&__price-includes-title {
+		}
+
+		&__price-includes-elem {
+		}
+
+		&__img {
+		}
+} 
 }
 
