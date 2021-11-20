@@ -1,0 +1,86 @@
+.meet-mob {
+    display: none;
+    border-bottom: solid 1px rgb(255, 255, 255, 0.3);
+}
+
+@media (max-width: 700px) {
+    .meet-mob {
+        padding-top: 50px;
+        display: block;
+        &__title {
+            font-family: 'Mazzard H-SemiBold';
+            font-size: 26px;
+            margin-bottom: 20px;
+            margin-left: 15px;
+            color: #ffffff
+        }
+    
+        &__gallery {
+            margin-bottom: 10px;
+        }
+    
+        &__gallery-elem {
+            position: relative;
+            width: 100%;
+            margin-bottom: 5px;
+            
+        }
+    
+        &__gallery-content {
+            position: absolute;
+            padding-left: 20px;
+            padding-bottom: 50px;
+            padding-right: 10px;
+            left: 0;
+            bottom: 0;
+        }
+    
+        &__gallery-title {
+            font-family: 'Bebas Neue Pro';
+            font-size: 30px;    
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+    
+        &__gallery-text {
+            font-family: 'Gilroy-Regular';
+            font-size: 17px;
+        }
+    
+        &__text {
+            font-family: 'Gilroy-Regular';
+            font-size: 17px;
+            color: #ffffff;
+            opacity: 0.7;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        &__bnt {
+            color: #ffffff;
+            @include btn-gradient(200px, 20px 16px);
+            margin: 0 auto 30px auto;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .meet-mob {
+        padding-top: 50px;
+        display: block;
+        &__gallery-content {
+            padding-left: 10px;
+            padding-bottom: 25px;
+        }
+    
+        &__gallery-title {
+            font-size: 20px;     
+        }
+    
+        &__gallery-text {
+          
+            font-size: 14px;
+        }
+    }
+}
+

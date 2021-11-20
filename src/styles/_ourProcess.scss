@@ -31,8 +31,9 @@
         position: absolute;
         content: '';
         height: 40px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border: 1px solid #22CED9;
+        width: 1px;
+        background: linear-gradient(90deg,#667374 0,rgba(102,115,116,0)100%);
+        border: 0;
         left: 0;
         bottom: -20px;
     }
@@ -41,10 +42,12 @@
         position: absolute;
         content: '';
         width: 100vw;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border: 1px solid #22CED9;
+        height: 1px;
+        background: linear-gradient(90deg,#667374 0,rgba(102,115,116,0)100%);
+        border: 0;
         left: -50vw;
         bottom: 0;
+
     }
 
     &__table-num {
@@ -89,46 +92,24 @@
         font-size: 17px;
     }
 }
-
 @media (max-width: 1280px) {
     .ourprocess {
-
-		&__title {
-		}
-
 		&__table {
             grid-template-rows: 75px 100%;
 		}
-
-		&__table-cell {
-		}
-
-		&__table-cell-top {
-		}
-
-		&__table-num {
-		}
-
-		&__table-title {
-            
-		}
-
-		&__table-descr {
-		}
-
-		&__btn {
-		}
-}
+    }
 }
 @media (max-width: 1000px) {
     .ourprocess {
         margin-bottom: 100px;
+        padding-top: 30px;
         align-items: flex-start;
 
 		&__title {
             font-family: "Bebas Neue Pro";
             font-size: 48px;
             text-transform: uppercase;
+            margin-bottom: 10px;
 		}
 
 		&__table {
@@ -137,9 +118,6 @@
             min-height: 700px;
 		}
 
-		&__table-cell {
-            
-		}
         &__table-cell-1 {
             grid-column: 1;
             grid-row: 1;
@@ -173,13 +151,12 @@
         }
 
 		&__table-cell-top {
-            border-right: 2px solid #22cdd9b7;
+            border-right: 1px solid #667374;
 		}
         &__table-cell-top::before {
             content: '';
             left: 0;
             bottom: 0;
-            background: #22cdd9b7;
             width: 270px;
             height: 1px;
         }
@@ -213,9 +190,17 @@
 		&__btn {
             font-size: 18px;
 		}
+    }
 }
+@media (max-width: 768px) {
+    .ourprocess {
+        padding-top: 20px;
+        margin-bottom: 20px;
+		&__title {
+            margin-bottom: 30px;
+		}
+    }
 }
-
 @media (max-width: 360px) {
     .ourprocess {
         padding-top: 0;
@@ -233,36 +218,12 @@
             grid-template-columns: 30px 1fr;
             grid-template-rows: 1fr 1.22fr 1fr;
             min-height: 350px;
-            
 		}
 
 		&__table-cell {
             margin: 0 0 0 10px;
             padding: 15px 0;
-            
-            
 		}
-        &__table-cell-1 {
-            // background: red;
-        }
-        &__table-cell-2 {
-           
-        }
-        &__table-cell-3 {
-            
-        }
-        &__table-cell-4 {
-            
-            
-        }
-        &__table-cell-5 {
-            
-            
-        }
-        &__table-cell-6 {
-          
-            
-        }
 
 		&__table-cell-top {
             border-right: none;
@@ -296,7 +257,6 @@
 		}
         &__table-title-mob {
             display: none;
-            
         }
 
 		&__table-descr {
@@ -307,5 +267,5 @@
 		&__btn {
             font-size: 14px;
 		}
-}
+    }
 }

@@ -37,7 +37,7 @@ function browsersync() {
 }
 
 function scripts() {
-    return src(['src/scripts/main.js'])
+    return src(['src/scripts/*.js'])
         .pipe(concat('main.min.js'))
         .pipe(uglify())
         .pipe(dest('dist/scripts/'))

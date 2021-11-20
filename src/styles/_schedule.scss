@@ -4,11 +4,12 @@
     padding-top: 95px;
 
     &__container {
-        @include flex(flex-end, flex-end);
+        @include flex(flex-end, flex-start);
     }
 
     &__img {
         width: 100%;
+        margin-top: 100px;
     }
 
     &__img-mob {
@@ -90,55 +91,50 @@
 @media (max-width: 1280px) {
     .schedule {
 
-		&__container {
-            align-items: center;
-		}
-
-		&__img {
-		}
-
-		&__inner {
-            
-		}
-
-		&__content {
-            
-		}
-
-		&__title {
+        &__title {
             font-size: 32px;
-		}
+        }
 
-		&__subtitle {
+        &__subtitle {
             font-size: 20px;
-		}
+        }
 
-		&__list {
-		}
+        &__list-title {
+            font-size: 20px;  
+        }
 
-		&__list-elem {
-		}
-
-		&__list-title {
+        &__list-text {
             font-size: 20px;
-		}
-
-		&__list-text {
-            font-size: 20px;
-		}
-
-		&__btn {
-		}
+        }
+    }
 }
-
-
-}
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .schedule {
+            &__content {
+                margin-right: 10px;
+                margin-left: 20px;
+            }
 
-		&__container {
-		}
+            &__title {
+                font-size: 29px;
+                margin-bottom: 20px;
+            }
 
+            &__subtitle {
+                margin-bottom: 20px;
+            }
+
+            &__list-elem {
+                margin-bottom: 20px;
+            }
+
+            &__list-title {
+                margin-bottom: 10px;
+            }
+    }
+}
+@media (max-width: 1070px) {
+    .schedule {
 		&__img {
             height: 300px;
 		}
@@ -149,6 +145,7 @@
 
 		&__content {
             max-width: 300px;
+            margin-right: 0;
 		}
 
 		&__title {
@@ -157,9 +154,6 @@
 
 		&__subtitle {
             font-size: 17px;
-		}
-
-		&__list {
 		}
 
 		&__list-elem {
@@ -173,55 +167,11 @@
 		&__list-text {
             font-size: 17px;
 		}
-
-		&__btn {
-		}
+    }
 }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .schedule {
-        padding-top: 50px;
-		&__container {
-		}
-
-		&__img {
-		}
-
-		&__inner {
-		}
-
-		&__content {
-		}
-
-		&__title {
-		}
-
-		&__subtitle {
-		}
-
-		&__list {
-		}
-
-		&__list-elem {
-		}
-
-		&__list-title {
-		}
-
-		&__list-text {
-		}
-
-		&__btn {
-		}
-}
-}
-@media (max-width: 700px) {
-    .schedule {
-        
-		&__container {
-		}
-
+      padding-top: 40px;
 		&__img {
             display: none;
 		}
@@ -229,6 +179,7 @@
         &__img-mob {
             display: block;
             width: 100%;
+            max-width: 800px;
             margin-bottom: 20px;
         }
 
@@ -240,6 +191,7 @@
 		&__content {
             width: 100%;
             max-width: 100%;
+            margin: 0;
 		}
 
 		&__title {
@@ -257,13 +209,7 @@
 		&__list {
             width: 100%;
             max-width: 100%;
-            
-		}
-
-		&__list-elem {
-		}
-
-		&__list-title {
+            padding-right: 15px;
 		}
 
 		&__list-text {
@@ -277,26 +223,12 @@
         &__btn::before {
             display: block;
 		}
+    }
 }
-
- 
-}
-@media (max-width: 500px) {
-    
-}
-@media (max-width: 435px) {
+@media (max-width: 450px) {
     .schedule {
-        padding: 0;
-		&__container {
-		}
-
-		&__img {
-		}
-
 		&__inner {
-		}
-
-		&__content {
+            margin:0;
 		}
 
 		&__title {
@@ -307,13 +239,8 @@
             font-size: 17px;
 		}
 
-		&__img-mob {
-		}
-
-		&__list {
-		}
-
 		&__list-elem {
+            padding-right: 30px;
 		}
 
 		&__list-title {
@@ -323,13 +250,5 @@
 		&__list-text {
             font-size: 17px;
 		}
-
-		&__btn {
-		}
 }
 
-
-}
-@media (max-width: 360px) {
-    
-}

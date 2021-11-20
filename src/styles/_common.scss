@@ -158,8 +158,43 @@ img {
         background: linear-gradient(180deg, rgba(0, 0, 0, ) 0%, rgba(0, 0, 0,  0.2) 17.43%, rgba(0, 0, 0,  0.2) 80.24%, rgba(0, 0, 0,  0) 100%);
 }
 
+.hide {
+    display: none !important;
+}
+
+.hover-default {
+    transition: 0.2s all;
+}
+.hover-default:hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+.hover-mirror-border {
+    position: relative;
+    transition: 0.5s all;
+}
+
+.hover-mirror-border::before:hover {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hover-mirror-border::after:hover {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: blueviolet solid 2px;
+    width: 100px;
+    height: 300px;
+}
+
+
 @media (max-width: 768px) {
     .container  {
         padding: 0 10px;
     }
 }
+

@@ -28,13 +28,13 @@
                     </div>
 
                     <div class="get__list">
-                        <a href="/" class="get__list-elem">
+                        <a href="/" class="get__list-elem hover-default">
                             <img class="get__list-img" src="../images/whatsapp.png" alt="" srcset=""> Whatsapp
                         </a>
-                        <a href="/" class="get__list-elem">
+                        <a href="/" class="get__list-elem hover-default">
                             <img class="get__list-img" src="../images/flash.png" alt="" srcset=""> Messenger
                         </a>
-                        <a href="/" class="get__list-elem">
+                        <a href="/" class="get__list-elem hover-default">
                             <img class="get__list-img" src="../images/telegram.png" alt="" srcset=""> Telegram
                         </a>
                     </div>
@@ -46,11 +46,20 @@
                     </label>
 
                     <input class="get__tel" id="tel" type="tel" 
-                        placeholder="Write phone number here">
+                        placeholder="Write phone number here" data-contacts-form-input-tel>
 
-                    <button class="get__btn btn-standart">
+                    <button class="get__btn btn-standart hover-default" data-contacts-form-btn>
                         send
                     </button>
+                    
+                    <div class="get__successfull hide" data-contacts-hide-content>
+                        <p class="get__successfull-text">
+                            <b>Thank you!</b>
+                        </p>
+                        <p class="get__successfull-text">
+                            We'll reach you out soon
+                        </p>
+                    </div>
                 </form>
             </div>
         </div>
