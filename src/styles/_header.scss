@@ -441,43 +441,42 @@ $header-max-width: 3180px;
 }
 @media (max-width: 820px) {
     .header {
-            background-image: url('../images/home-screen-cover-820.jpg');
-            max-height: 555px;
+        background-image: url('../images/home-screen-cover-820.jpg');
+        max-height: 555px;
     }
 }     
 @media (max-width: 768px) {
-.content {
-		&__title {
-            font-size: 32px;
-            max-width: 320px;
-            line-height: 38px;
-            margin-bottom: 15px;
-		}
+    .content {
+            &__title {
+                font-size: 32px;
+                max-width: 320px;
+                line-height: 38px;
+                margin-bottom: 15px;
+            }
 
-		&__subtitle {
-            margin-bottom: 20px;
-		}
+            &__subtitle {
+                margin-bottom: 20px;
+            }
 
-		&__table {
-            margin-bottom: 30px;
-		}
-}
-.aside {
-        max-height: 522px;
-}
-
+            &__table {
+                margin-bottom: 30px;
+            }
+    }
+    .aside {
+            max-height: 522px;
+    }
 }
 @media (max-width: 635px) {
-.header {
-        padding: 20vh 0 0 2vw;
-       
-		&__logo {
-            content: url("../images/logo-mini.png");
-            top: 30px;
-            left: 35px;
-		}
-}
-.content {
+    .header {
+            padding: 20vh 0 0 2vw;
+        
+            &__logo {
+                content: url("../images/logo-mini.png");
+                top: 30px;
+                left: 35px;
+            }
+    }
+    .content {
 
 		&__subtitle {
             max-width: 320px;
@@ -490,20 +489,20 @@ $header-max-width: 3180px;
     }
 }
 @media (max-width: 500px) {
-.menu {
-		&__language {
-            border-right: none;
-		}
+    .menu {
+            &__language {
+                border-right: none;
+            }
 
-		&__language-ru {
-            display: none;
-		}
+            &__language-ru {
+                display: none;
+            }
 
-		&__contact {
-            display: none;
-		}
-    }
-.aside {
+            &__contact {
+                display: none;
+            }
+        }
+    .aside {
 
 		&__title {
             font-size: 28px;
@@ -566,27 +565,28 @@ $header-max-width: 3180px;
     }
 }
 @media (max-width: 360px) {
-.header {
+    .header {
         max-height: 222px;
     }
-.content {
+    .content {
         display: none;
-		&__title {
+        &__title {
             font-size: 32px;
             max-width: 320px;
             line-height: 38px;
             margin-bottom: 15px;
-		}
+        }
 
-		&__subtitle {
+        &__subtitle {
             margin-bottom: 20px;
-		}
+        }
 
-		&__table {
+        &__table {
             margin-bottom: 30px;
-		}
-}
-.aside {
-    height: 100vh;
+        }
     }
+    .aside {
+        height: 100vh;
+    } 
 }
+
